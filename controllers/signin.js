@@ -14,12 +14,12 @@ const signin = async (req, res) => {
       lastName,
       email,
       phone,
-      password
+      password,
     });
 
     res.status(201).json({
       message: "User registered successfully",
-      user
+      user,
     });
   } catch (err) {
     return res
